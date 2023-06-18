@@ -1,0 +1,26 @@
+.research {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.date {
+    text-decoration: underline white;
+}
+
+.title {
+    word-break: keep-all;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 728px) {
+    .research {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .title {
+        word-break: keep-all;
+        margin-left: 0;
+    }
+}
