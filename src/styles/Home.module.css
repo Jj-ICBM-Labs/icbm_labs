@@ -85,6 +85,28 @@
   justify-content: space-evenly;
 }
 
+.content>.description>a {
+  display: flex;
+  margin: 0 auto;
+  width: 140px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: underline #0f69d0 5px;
+  transition: background-color 500ms, color 500ms;
+}
+
+.content>.description>a:hover {
+  background-color: #c6cf2c;
+  color: #2e2e2e;
+}
+
+.content>.description>a>svg {
+  margin-right: 15px;
+}
+
 .content>.description>.welfares {
   background-color: #1d1d1d;
 }
