@@ -10,6 +10,8 @@
   height: 420px;
   padding: 1rem 2rem;
   background-image: url("/header.mp4");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
