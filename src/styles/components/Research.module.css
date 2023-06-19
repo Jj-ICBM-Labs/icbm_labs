@@ -1,10 +1,12 @@
 .research {
-    margin: 15px 0;
+    background-color: var(--bg-300);
+    color:var(--text-100);
+    margin: 5px 0;
     font-size: 15px;
 }
 
 .date {
-    text-decoration: underline white;
+    text-decoration: underline var(--primary-200);
 }
 
 .title {
