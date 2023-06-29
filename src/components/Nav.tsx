@@ -1,7 +1,7 @@
 import styles from 'modules/styles/components/Nav.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 
 export default function Nav() {
     const [open, setOpen] = useState(false);
@@ -10,12 +10,27 @@ export default function Nav() {
     useEffect(() => {
         if (item.current) {
             if (open) {
-                item.current.style.transform = 'translate(0, 330px)';
+                item.current.style.transform = 'translate(0, 329px)';
             } else {
                 item.current.style.transform = 'none';
             }
-        } 
+        }
     }, [open]);
+
+    const resize = () => {
+        console.log();
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            window.addEventListener('resize', resize, { passive: true });
+            return () => {
+                window.removeEventListener('resize', resize);
+            }
+        });
+    }, []);
+
+    
 
     return (
         <div className={styles.nav}>
@@ -33,13 +48,13 @@ export default function Nav() {
                 </svg>
             </span>
             <div ref={item} className={styles.items}>
-                <Link onClick={() => {setOpen(false), scrollTo({top:0, behavior: 'smooth'})}} href={"#"} scroll={false}>
+                <Link onClick={() => { setOpen(false), scrollTo({ top: 0, behavior: 'smooth' }) }} href={"#"} scroll={false}>
                     Home
                 </Link>
                 <Link onClick={() => setOpen(false)} href={"#intro"} scroll={false}>
                     소개
                 </Link>
-                <Link onClick={() => setOpen(false)} href={"#research"} scroll={false}> 
+                <Link onClick={() => setOpen(false)} href={"#research"} scroll={false}>
                     연구
                 </Link>
                 <Link onClick={() => setOpen(false)} href={"#welfare"} scroll={false}>

@@ -86,7 +86,7 @@
   background-color: var(--primary-100);
   position: sticky;
   position: -webkit-sticky;
-  top: 40px;
+  top: 0px;
 }
 
 .contentNav>.title {
@@ -109,9 +109,13 @@
   justify-content: space-evenly;
 }
 
+.contentNav>.items>a:first-child {
+  font-size: 40px;
+}
+
 .contentNav>.items>a {
   transition: font-size 500ms;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Jomhuria';
   font-weight: Regular;
 }
@@ -131,12 +135,6 @@
   min-height: 90vh;
   z-index: 5;
   border-bottom: 1px solid #ccc;
-}
-
-.content:last-child {
-  border: none;
-  border-radius: 0 0 20px 20px;
-  margin-bottom: 100px;
 }
 
 .content>.title {
