@@ -40,6 +40,15 @@
     content: "• ";
 }
 
+.items>a {
+    transition: color 500ms, font-size 500ms;
+}
+
+.items>a:hover {
+    color: var(--text-200);
+    font-size: 20px;
+}
+
 .btn {
     cursor: pointer;
     display: none;

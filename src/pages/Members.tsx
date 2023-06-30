@@ -3,8 +3,8 @@ import styles from 'modules/styles/Members.module.css'
 
 import Nav from 'modules/components/Nav'
 import Footer from 'modules/components/Footer'
+import Scroll from 'modules/components/Scroll'
 
-import { researches, wanted, welfares } from 'modules/Data/ments';
 import Link from 'next/link';
 import { profiles } from 'modules/Data/profile';
 
@@ -68,6 +68,7 @@ export default function Home() {
                     })}
                 </div>
             </div>
+            <Scroll />
             <Footer />
         </>
     )

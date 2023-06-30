@@ -146,7 +146,12 @@
 }
 
 .content>.title>svg {
+  position: relative;
   margin-right: 20px;
+}
+
+.content>.title>svg:hover {
+  animation: Round 2s;
 }
 
 .content>.description {
@@ -370,5 +375,15 @@
     opacity: 1;
     margin-bottom: -40px;
     margin-top: 80px;
+  }
+}
+
+@keyframes Round {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
   }
 }
