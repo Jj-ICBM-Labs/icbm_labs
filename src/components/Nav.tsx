@@ -10,7 +10,7 @@ export default function Nav() {
     useEffect(() => {
         if (item.current) {
             if (open) {
-                item.current.style.transform = 'translate(0, 333px)';
+                item.current.style.transform = 'translate(0, 334px)';
             } else {
                 item.current.style.transform = 'none';
             }

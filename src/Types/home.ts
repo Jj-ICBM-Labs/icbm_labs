@@ -9,3 +9,8 @@ export type welfareTypes = {
     description?: string;
     etc?: string[];
 };
+
+export type wantedTypes = {
+    title: string;
+    description: string[];
+}
