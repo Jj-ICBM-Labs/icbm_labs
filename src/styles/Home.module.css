@@ -301,6 +301,9 @@
   }
 
   .header>.right {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 25%);
     position: absolute;
     opacity: 0.2;
   }
