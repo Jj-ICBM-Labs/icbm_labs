@@ -1,7 +1,7 @@
 import styles from 'modules/styles/components/Nav.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { SyntheticEvent, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Nav() {
     const [open, setOpen] = useState(false);
@@ -18,7 +18,10 @@ export default function Nav() {
     }, [open]);
 
     const resize = () => {
-        console.log();
+        const { innerWidth } = window;
+        if (item.current && innerWidth > 990 && open) {
+            setOpen(false);
+        }
     };
 
     useEffect(() => {
@@ -30,7 +33,7 @@ export default function Nav() {
         });
     }, []);
 
-    
+
 
     return (
         <div className={styles.nav}>
