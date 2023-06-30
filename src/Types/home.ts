@@ -13,4 +13,4 @@ export type welfareTypes = {
 export type wantedTypes = {
     title: string;
     description: string[];
-}
+};

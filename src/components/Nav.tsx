@@ -38,7 +38,7 @@ export default function Nav() {
     return (
         <div className={styles.nav}>
             <div className={styles.left}>
-                <Link href={"/"} className={styles.logo}>
+                <Link href={"/"} scroll={false} onClick={() => scrollTo({ top: 0, behavior: 'smooth' })} className={styles.logo}>
                     <Image src={"/logo.png"} width={45} height={45} alt={"Logo"} />
                     <span className={styles.title}>
                         ICBM LABS
@@ -51,20 +51,20 @@ export default function Nav() {
                 </svg>
             </span>
             <div ref={item} className={styles.items}>
-                <Link onClick={() => { setOpen(false), scrollTo({ top: 0, behavior: 'smooth' }) }} href={"#"} scroll={false}>
-                    Home
-                </Link>
-                <Link onClick={() => setOpen(false)} href={"#intro"} scroll={false}>
+                <Link onClick={() => setOpen(false)} href={"/#intro"} scroll={false}>
                     소개
                 </Link>
-                <Link onClick={() => setOpen(false)} href={"#research"} scroll={false}>
+                <Link onClick={() => setOpen(false)} href={"/#research"} scroll={false}>
                     연구
                 </Link>
-                <Link onClick={() => setOpen(false)} href={"#welfare"} scroll={false}>
+                <Link onClick={() => setOpen(false)} href={"/#welfare"} scroll={false}>
                     복지
                 </Link>
-                <Link onClick={() => setOpen(false)} href={"#icbm"} scroll={false}>
+                <Link onClick={() => setOpen(false)} href={"/#icbm"} scroll={false}>
                     지원
+                </Link>
+                <Link onClick={() => { setOpen(false) }} href={"/Members"} scroll={false}>
+                    연구원
                 </Link>
             </div>
         </div>

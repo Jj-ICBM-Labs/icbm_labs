@@ -139,8 +139,8 @@ export default function Home() {
                       <p className={styles.title}>{title}</p>
                       <div className={styles.description}>
                         <p>{description}</p>
-                        {etc?.map((value) => {
-                          return <li className={styles.items} key={title}>{value}</li>
+                        {etc?.map((value, index) => {
+                          return <li className={styles.items} key={index}>{value}</li>
                         })}
                       </div>
                     </div>
@@ -186,14 +186,14 @@ export default function Home() {
               <div className={styles.description}>
                 {
                   wanted.map(({ title, description }, index) => {
-                    return <>
+                    return <div key={index}>
                       <p className={styles.important} key={index}>{title}</p>
                       <div className={styles.mention}>
                         {description.map((des) => {
                           return <li key={des}>{des}</li>
                         })}
                       </div>
-                    </>
+                    </div>
                   })
                 }
 
