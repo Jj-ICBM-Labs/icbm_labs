@@ -6,6 +6,6 @@ export type researchTypes = {
 
 export type welfareTypes = {
     title: string;
-    description: string;
-    etc?: string;
+    description?: string;
+    etc?: string[];
 };

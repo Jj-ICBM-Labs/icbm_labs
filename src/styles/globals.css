@@ -31,6 +31,7 @@ body {
   /* overflow-x: hidden; */
   background-color: var(--bg-300);
   color: var(--accent-100);
+  white-space: pre-wrap;
 }
 
 a {

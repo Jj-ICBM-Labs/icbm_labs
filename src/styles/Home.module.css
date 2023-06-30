@@ -207,6 +207,9 @@
 }
 
 .welfare>.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
   font-size: 15px;
 }
@@ -257,11 +260,6 @@
     font-size: 40px;
   }
 
-  .header>.right>img {
-    width: 200px;
-    height: 200px;
-  }
-
   .contentNav {
     display: none;
   }
@@ -302,9 +300,14 @@
     font-size: 40px;
   }
 
-  .header>.right>img {
-    width: 200px;
-    height: 200px;
+  .header>.right {
+    position: absolute;
+    opacity: 0.2;
+  }
+
+  .header>.right>.hat {
+    opacity: 0;
+    animation: 4s hat 1s infinite alternate;
   }
 
   .contentNav {

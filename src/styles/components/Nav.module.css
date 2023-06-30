@@ -62,7 +62,7 @@
     }
 
     .items {
-        margin-top: -280px;
+        margin-top: -290px;
         border: 1px solid #1a1a1a;
         border-top: none;
         flex-direction: column;
@@ -87,5 +87,11 @@
 @media (max-height: 600px) {
     .nav {
         position: sticky;
+    }
+}
+
+@media (min-height: 400px) {
+    .logo>.title {
+        display: none;
     }
 }
