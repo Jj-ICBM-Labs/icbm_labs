@@ -7,5 +7,25 @@ export const profiles: profileTypes[] = [
         bio: "Devist",
         github: "CistusF",
         blog: "https://CistusF.github.io/My-SNS"
+    },
+    {
+        name: "테스트1",
+        number: 23
+    },
+    {
+        name: "테스트2",
+        number: 23
+    },
+    {
+        name: "테스트3",
+        number: 23
+    },
+    {
+        name: "테스트4",
+        number: 23
+    },
+    {
+        name: "테스트5",
+        number: 23
     }
 ]
