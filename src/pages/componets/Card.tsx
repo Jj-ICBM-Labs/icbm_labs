@@ -21,6 +21,7 @@ export default function Card(
     }, [cardFace]);
 
     return (
+        !researcher ? <></> :
         <div ref={card} onClick={() => setCardFace(!cardFace)} className="relative w-96 h-52 cursor-pointer transition-all gap-x-6" style={{
             transform: "perspective(800px) rotateY(0deg)",
             transformStyle: "preserve-3d",
@@ -42,14 +43,14 @@ export default function Card(
                 </svg>
                 <div className="h-full w-full flex">
                     <div className="h-full w-[100px] flex flex-col justify-center break-keep">
-                        <p>{researcher.name}</p>
-                        <p className="text-xs">{researcher.role}</p>
-                        <p className="text-xs mt-3">{researcher.interasted}</p>
+                        <p>{researcher?.name ?? "이름 없음"}</p>
+                        <p className="text-xs">{researcher?.role ?? "역할 없음"}</p>
+                        <p className="text-xs mt-3">{researcher.interasted ?? "컴퓨터 공학과"}</p>
                     </div>
                     <div className="h-full w-full/2 flex justify-center items-center">
                         {
                             researcher?.imageUrl ?
-                                <img data-tooltip-target={researcher.name + "-" + index} className="h-16 w-16 rounded-full" src={researcher.imageUrl} alt="" />
+                                <img data-tooltip-target={(researcher.name ?? "이름_없음") + "-" + index} className="h-16 w-16 rounded-full" src={researcher?.imageUrl} alt="" />
                                 :
                                 <UserCircleIcon className="size-16 text-blue-500 mx-auto" />
                         }
