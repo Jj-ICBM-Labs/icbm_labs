@@ -36,7 +36,7 @@ export default function Card(
                         <path d="M 57 0 L 0 0 L 0 48 L 57 48 L 57 48 Z M 38 28 L 38 20 L 47.5 20 L 47.5 28 L 38 28 Z M 38 40 L 38 32 L 47.5 32 L 47.5 36 C 47.5 38.2125 45.3773 40 42.75 40 L 38 40 Z M 19 32 L 19 40 L 14.25 40 C 11.6227 40 9.5 38.2125 9.5 36 L 9.5 32 L 19 32 Z M 19 20 L 19 28 L 9.5 28 L 9.5 20 L 19 20 Z M 19 8 L 19 16 L 9.5 16 L 9.5 12 C 9.5 9.7875 11.6227 8 14.25 8 L 19 8 Z M 33.25 8 L 33.25 40 L 23.75 40 L 23.75 8 L 33.25 8 Z M 42.75 8 C 45.3773 8 47.5 9.7875 47.5 12 L 47.5 16 L 38 16 L 38 8 L 42.75 8 Z" fill="black" />
                     </g>
                     <text
-                        x="20" y="30" fill="white" font-size="20" fontFamily="'Leckerli One', cursive">
+                        x="20" y="30" fill="white" fontSize="20" fontFamily="'Leckerli One', cursive">
                         ICBM Labs
                     </text>
                     <image href="/logo-no-background.png" width={40} height={40} x={30} y={160} />
